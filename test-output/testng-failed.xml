@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Data Driven Approach]">
+  <test thread-count="5" name="Add Customer Test(failed)">
+    <classes>
+      <class name="com.org.testcases.AddCustomerTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="addCustomer"/>
+        </methods>
+      </class> <!-- com.org.testcases.AddCustomerTest -->
+    </classes>
+  </test> <!-- Add Customer Test(failed) -->
+</suite> <!-- Failed suite [Data Driven Approach] -->

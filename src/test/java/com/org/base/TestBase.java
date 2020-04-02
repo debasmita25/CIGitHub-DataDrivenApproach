@@ -34,7 +34,7 @@ import com.org.utilities.TestUtil;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
-	
+
 	public static WebDriver driver;
 	public static Properties config = new Properties();
 	public static Properties or = new Properties();
@@ -42,11 +42,13 @@ public class TestBase {
 	public static Logger log = Logger.getLogger("devpinoyLogger");
 	public static Date d = new Date();
 	public static WebDriverWait wait;
-	public static ExcelReading excelRead =new ExcelReading(System.getProperty("user.dir") + "\\src\\test\\resources\\excel\\testdata.xlsx");
-	
+	public static ExcelReading excelRead = new ExcelReading(
+			System.getProperty("user.dir") + "\\src\\test\\resources\\excel\\testdata.xlsx");
+	public static String browser;
+
 	@BeforeSuite
 	public void setUp() {
-		
+
 		System.setProperty("org.uncommons.reportng.escape-output", "false");
 		PropertyConfigurator
 				.configure(System.getProperty("user.dir") + "\\src\\test\\resources\\properties\\log4j.properties");
@@ -85,6 +87,19 @@ public class TestBase {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+
+			// for Jenkins browser Parameter which is set at System Env level
+			if (System.getenv("browser") != null && !System.getenv("browser").isEmpty()) {
+
+				browser = System.getenv("browser");
+			} else {
+
+				browser = config.getProperty("browser");
+
+			}
+
+			config.setProperty("browser", browser);
+
 			if (config.getProperty("browser").equals("chrome")) {
 				WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver();
@@ -107,7 +122,7 @@ public class TestBase {
 		}
 
 	}
-	
+
 	public static boolean isElementPresent(By by) {
 
 		try {
@@ -118,39 +133,39 @@ public class TestBase {
 		}
 
 	}
-	
-	public void verifyEquals(String expected,String actual) {
-		
-		try
-		{
-			Assert.assertEquals(expected,actual);
-		}
-		catch(Throwable t)
-		{
+
+	public void verifyEquals(String expected, String actual) {
+
+		try {
+			Assert.assertEquals(expected, actual);
+		} catch (Throwable t) {
 			TestUtil.captureScreenshot();
 			log.debug("Assertion Verify Error");
 			Reporter.log("Assertion Verify Error");
 			Reporter.log("<br>");
 			Reporter.log(t.getMessage());
 			Reporter.log("<br>");
-			Reporter.log("<a href="+TestUtil.screenshotName+" target=\"_blank\"><img src="+TestUtil.screenshotName+" height=200 width=200></img></a>");
+			Reporter.log("<a href=" + TestUtil.screenshotName + " target=\"_blank\"><img src=" + TestUtil.screenshotName
+					+ " height=200 width=200></img></a>");
 			Reporter.log("<br>");
-			
-			
+
 			CustomListener.testReport.get().fail("Verify Equals fail");
 			CustomListener.testReport.get().log(Status.FAIL, t.getMessage());
-			String exceptionMessage=Arrays.toString(t.getStackTrace());
-			
-			CustomListener.testReport.get().fail("<details> <summary> <font color=red> Exception Occured : Click to see </font></summary> "+exceptionMessage.replaceAll(",", "<br>")+"</details> ");
+			String exceptionMessage = Arrays.toString(t.getStackTrace());
+
+			CustomListener.testReport.get()
+					.fail("<details> <summary> <font color=red> Exception Occured : Click to see </font></summary> "
+							+ exceptionMessage.replaceAll(",", "<br>") + "</details> ");
 			try {
-				CustomListener.testReport.get().fail("<font color=red>FAILED SCREENSHOT: </font><br>", MediaEntityBuilder.createScreenCaptureFromPath(TestUtil.screenshotPathExtent).build());
+				CustomListener.testReport.get().fail("<font color=red>FAILED SCREENSHOT: </font><br>",
+						MediaEntityBuilder.createScreenCaptureFromPath(TestUtil.screenshotPathExtent).build());
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
 	}
-	
+
 	@AfterSuite
 	public void tearDown() {
 		if (driver != null) {
@@ -167,38 +182,38 @@ public class TestBase {
 		switch (locator.substring(check)) {
 		case "_css":
 			driver.findElement(By.cssSelector(or.getProperty(locator))).click();
-			//CustomListener.test.log(Status.INFO, "CLICKING ON " + locator);
+			// CustomListener.test.log(Status.INFO, "CLICKING ON " + locator);
 			break;
 		case "_xpath":
 			driver.findElement(By.xpath(or.getProperty(locator))).click();
-			//CustomListener.test.log(Status.INFO, "CLICKING ON " + locator);
+			// CustomListener.test.log(Status.INFO, "CLICKING ON " + locator);
 			break;
 		case "_id":
 			driver.findElement(By.id(or.getProperty(locator))).click();
-			//CustomListener.test.log(Status.INFO, "CLICKING ON " + locator);
+			// CustomListener.test.log(Status.INFO, "CLICKING ON " + locator);
 			break;
 		case "_name":
 			driver.findElement(By.name(or.getProperty(locator))).click();
-			//CustomListener.test.log(Status.INFO, "CLICKING ON " + locator);
+			// CustomListener.test.log(Status.INFO, "CLICKING ON " + locator);
 			break;
 		case "_classname":
 			driver.findElement(By.className(or.getProperty(locator))).click();
-			//CustomListener.test.log(Status.INFO, "CLICKING ON " + locator);
+			// CustomListener.test.log(Status.INFO, "CLICKING ON " + locator);
 			break;
 		case "_partiallinktext":
 			driver.findElement(By.partialLinkText(or.getProperty(locator))).click();
-			//CustomListener.test.log(Status.INFO, "CLICKING ON " + locator);
+			// CustomListener.test.log(Status.INFO, "CLICKING ON " + locator);
 			break;
 		case "_linktext":
 			driver.findElement(By.linkText(or.getProperty(locator))).click();
-			//CustomListener.test.log(Status.INFO, "CLICKING ON " + locator);
+			// CustomListener.test.log(Status.INFO, "CLICKING ON " + locator);
 			break;
 		case "_tagname":
 			driver.findElement(By.tagName(or.getProperty(locator))).click();
-			//CustomListener.test.log(Status.INFO, "CLICKING ON " + locator);
+			// CustomListener.test.log(Status.INFO, "CLICKING ON " + locator);
 			break;
 		default:
-			//CustomListener.test.log(Status.ERROR, "UNABLE TO CLICK incorrect Locator");
+			// CustomListener.test.log(Status.ERROR, "UNABLE TO CLICK incorrect Locator");
 			break;
 
 		}
@@ -211,38 +226,46 @@ public class TestBase {
 		switch (locator.substring(check)) {
 		case "_css":
 			driver.findElement(By.cssSelector(or.getProperty(locator))).sendKeys(value);
-			//CustomListener.test.log(Status.INFO, "TYPING ON " + locator + " with value " + value);
+			// CustomListener.test.log(Status.INFO, "TYPING ON " + locator + " with value "
+			// + value);
 			break;
 		case "_xpath":
 			driver.findElement(By.xpath(or.getProperty(locator))).sendKeys(value);
-			//CustomListener.test.log(Status.INFO, "TYPING ON " + locator + " with value " + value);
+			// CustomListener.test.log(Status.INFO, "TYPING ON " + locator + " with value "
+			// + value);
 			break;
 		case "_id":
 			driver.findElement(By.id(or.getProperty(locator))).sendKeys(value);
-			//CustomListener.test.log(Status.INFO, "TYPING ON " + locator + " with value " + value);
+			// CustomListener.test.log(Status.INFO, "TYPING ON " + locator + " with value "
+			// + value);
 			break;
 		case "_name":
 			driver.findElement(By.name(or.getProperty(locator))).sendKeys(value);
-			//CustomListener.test.log(Status.INFO, "TYPING ON " + locator + " with value " + value);
+			// CustomListener.test.log(Status.INFO, "TYPING ON " + locator + " with value "
+			// + value);
 			break;
 		case "_classname":
 			driver.findElement(By.className(or.getProperty(locator))).sendKeys(value);
-			//CustomListener.test.log(Status.INFO, "TYPING ON " + locator + " with value " + value);
+			// CustomListener.test.log(Status.INFO, "TYPING ON " + locator + " with value "
+			// + value);
 			break;
 		case "_partiallinktext":
 			driver.findElement(By.partialLinkText(or.getProperty(locator))).sendKeys(value);
-			//CustomListener.test.log(Status.INFO, "TYPING ON " + locator + " with value " + value);
+			// CustomListener.test.log(Status.INFO, "TYPING ON " + locator + " with value "
+			// + value);
 			break;
 		case "_linktext":
 			driver.findElement(By.linkText(or.getProperty(locator))).sendKeys(value);
-			//CustomListener.test.log(Status.INFO, "TYPING ON " + locator + " with value " + value);
+			// CustomListener.test.log(Status.INFO, "TYPING ON " + locator + " with value "
+			// + value);
 			break;
 		case "_tagname":
 			driver.findElement(By.tagName(or.getProperty(locator))).sendKeys(value);
-			//CustomListener.test.log(Status.INFO, "TYPING ON " + locator + " with value " + value);
+			// CustomListener.test.log(Status.INFO, "TYPING ON " + locator + " with value "
+			// + value);
 			break;
 		default:
-			//CustomListener.test.log(Status.DEBUG, "Unable to TYPE, INCORRECT LOCATOR");
+			// CustomListener.test.log(Status.DEBUG, "Unable to TYPE, INCORRECT LOCATOR");
 			break;
 
 		}
@@ -278,7 +301,7 @@ public class TestBase {
 			element = driver.findElement(By.tagName(or.getProperty(locator)));
 			break;
 		default:
-			//CustomListener.test.log(Status.DEBUG, "Unable to SELECT, INCORRECT LOCATOR");
+			// CustomListener.test.log(Status.DEBUG, "Unable to SELECT, INCORRECT LOCATOR");
 			break;
 
 		}
@@ -287,24 +310,22 @@ public class TestBase {
 
 			if (selectioncriteria.equalsIgnoreCase("selectByindex")) {
 				select.selectByIndex(Integer.parseInt(value));
-				//CustomListener.test.log(Status.INFO, "selected the option by index");
+				// CustomListener.test.log(Status.INFO, "selected the option by index");
 			} else if (selectioncriteria.equalsIgnoreCase("selectByValue")) {
 				select.selectByValue(value);
-				//CustomListener.test.log(Status.INFO, "selected the option by value");
+				// CustomListener.test.log(Status.INFO, "selected the option by value");
 			} else if (selectioncriteria.equalsIgnoreCase("selectByVisibleText")) {
 				select.selectByVisibleText(value);
-				//CustomListener.test.log(Status.INFO, "selected the option by VisibleText");
-			} else
-			{
+				// CustomListener.test.log(Status.INFO, "selected the option by VisibleText");
+			} else {
 				log.debug("Incorrect Selection option");
 			}
-				//CustomListener.test.log(Status.DEBUG, "selected OPTION IS INVALID");
+			// CustomListener.test.log(Status.DEBUG, "selected OPTION IS INVALID");
 
 		}
-		
+
 		log.debug("Required Element is Selected from DROPDOWN");
 
 	}
-
 
 }

@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 2, Time elapsed: 300.268 s <<< FAILURE! - in TestSuite
+addCustomerTest(com.org.testcases.AddCustomerTest)  Time elapsed: 11.229 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"input[placeholder='First Name']"}
+  (Session info: chrome=80.0.3987.149)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HUDNDMF', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\DEBASM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56842}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8b82c8b80f1f0c6e88781e5116676f77
+*** Element info: {Using=css selector, value=input[placeholder='First Name']}
+	at com.org.testcases.AddCustomerTest.addCustomerTest(AddCustomerTest.java:30)
+
+addCustomerTest(com.org.testcases.AddCustomerTest)  Time elapsed: 10.447 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"input[placeholder='First Name']"}
+  (Session info: chrome=80.0.3987.149)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HUDNDMF', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\DEBASM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56842}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8b82c8b80f1f0c6e88781e5116676f77
+*** Element info: {Using=css selector, value=input[placeholder='First Name']}
+	at com.org.testcases.AddCustomerTest.addCustomerTest(AddCustomerTest.java:30)
+

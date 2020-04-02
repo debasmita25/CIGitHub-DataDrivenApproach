@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Data_Driven_Approach">
+              <span class="suite-name border-failed">Data Driven Approach</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Data_Driven_Approach">
+                    <span>F:\Selenium MyProjects\DataDrivenApproach\src\test\resources\runner\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Data_Driven_Approach">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Data_Driven_Approach">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Data_Driven_Approach">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Data_Driven_Approach">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Data_Driven_Approach">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Data_Driven_Approach">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">6 methods, 2 failed,  2 skipped,  2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Data_Driven_Approach" class="hide-methods failed suite-Data_Driven_Approach"> (hide)</a> <!-- hide-methods failed suite-Data_Driven_Approach -->
+                      <a href="#" panel-name="suite-Data_Driven_Approach" class="show-methods failed suite-Data_Driven_Approach"> (show)</a> <!-- show-methods failed suite-Data_Driven_Approach -->
+                    </span>
+                    <div class="method-list-content failed suite-Data_Driven_Approach">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Data_Driven_Approach" title="com.org.testcases.AddCustomerTest" hash-for-method="addCustomerTest(Guddu, Biswas, A234wd, Customer added successfully, Y)">addCustomerTest(Guddu, Biswas, A234wd, Customer added successfully, Y)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Data_Driven_Approach" title="com.org.testcases.AddCustomerTest" hash-for-method="addCustomerTest(Sudeep, Biswas, AFS42, Customer added successfully, Y)">addCustomerTest(Sudeep, Biswas, AFS42, Customer added successfully, Y)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Data_Driven_Approach -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Data_Driven_Approach" class="hide-methods skipped suite-Data_Driven_Approach"> (hide)</a> <!-- hide-methods skipped suite-Data_Driven_Approach -->
+                      <a href="#" panel-name="suite-Data_Driven_Approach" class="show-methods skipped suite-Data_Driven_Approach"> (show)</a> <!-- show-methods skipped suite-Data_Driven_Approach -->
+                    </span>
+                    <div class="method-list-content skipped suite-Data_Driven_Approach">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Data_Driven_Approach" title="com.org.testcases.AddCustomerTest" hash-for-method="addCustomerTest(Debasmita, Biswas, AFD76, Customer added successfully, N)">addCustomerTest(Debasmita, Biswas, AFD76, Customer added successfully, N)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Data_Driven_Approach" title="com.org.testcases.OpenAccountTest" hash-for-method="openAccountTest(Guddu Biswas, Rupee, Account created successfully)">openAccountTest(Guddu Biswas, Rupee, Account created successfully)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Data_Driven_Approach -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Data_Driven_Approach" class="hide-methods passed suite-Data_Driven_Approach"> (hide)</a> <!-- hide-methods passed suite-Data_Driven_Approach -->
+                      <a href="#" panel-name="suite-Data_Driven_Approach" class="show-methods passed suite-Data_Driven_Approach"> (show)</a> <!-- show-methods passed suite-Data_Driven_Approach -->
+                    </span>
+                    <div class="method-list-content passed suite-Data_Driven_Approach">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Data_Driven_Approach" title="com.org.testcases.AddCustomerTest" hash-for-method="addCustomerTest(Madhusmita, Halder, A425, Customer added successfully, Y)">addCustomerTest(Madhusmita, Halder, A425, Customer added successfully, Y)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Data_Driven_Approach" title="com.org.testcases.BankManagerLoginTest" hash-for-method="bankMngLogin">bankMngLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Data_Driven_Approach -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Data_Driven_Approach" class="panel Data_Driven_Approach">
+          <div class="suite-Data_Driven_Approach-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.org.testcases.AddCustomerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addCustomerTest(Guddu, Biswas, A234wd, Customer added successfully, Y)">
+                  </a> <!-- addCustomerTest(Guddu, Biswas, A234wd, Customer added successfully, Y) -->
+                  <span class="method-name">addCustomerTest</span>
+                  <span class="parameters">(Guddu, Biswas, A234wd, Customer added successfully, Y)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input[placeholder=&apos;First Name&apos;]&quot;}
+  (Session info: chrome=80.0.3987.149)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-HUDNDMF&apos;, ip: &apos;192.168.43.163&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\DEBASM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56842}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8b82c8b80f1f0c6e88781e5116676f77
+*** Element info: {Using=css selector, value=input[placeholder=&apos;First Name&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.org.base.TestBase.type(TestBase.java:228)
+	at com.org.testcases.AddCustomerTest.addCustomerTest(AddCustomerTest.java:30)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addCustomerTest(Sudeep, Biswas, AFS42, Customer added successfully, Y)">
+                  </a> <!-- addCustomerTest(Sudeep, Biswas, AFS42, Customer added successfully, Y) -->
+                  <span class="method-name">addCustomerTest</span>
+                  <span class="parameters">(Sudeep, Biswas, AFS42, Customer added successfully, Y)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input[placeholder=&apos;First Name&apos;]&quot;}
+  (Session info: chrome=80.0.3987.149)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-HUDNDMF&apos;, ip: &apos;192.168.43.163&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\DEBASM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56842}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8b82c8b80f1f0c6e88781e5116676f77
+*** Element info: {Using=css selector, value=input[placeholder=&apos;First Name&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.org.base.TestBase.type(TestBase.java:228)
+	at com.org.testcases.AddCustomerTest.addCustomerTest(AddCustomerTest.java:30)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Data_Driven_Approach-class-failed -->
+          <div class="suite-Data_Driven_Approach-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.org.testcases.AddCustomerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addCustomerTest(Debasmita, Biswas, AFD76, Customer added successfully, N)">
+                  </a> <!-- addCustomerTest(Debasmita, Biswas, AFD76, Customer added successfully, N) -->
+                  <span class="method-name">addCustomerTest</span>
+                  <span class="parameters">(Debasmita, Biswas, AFD76, Customer added successfully, N)</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the TEST as the RUNMODE is NO
+	at com.org.testcases.AddCustomerTest.addCustomerTest(AddCustomerTest.java:27)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Data_Driven_Approach-class-skipped -->
+          <div class="suite-Data_Driven_Approach-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.org.testcases.OpenAccountTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="openAccountTest(Guddu Biswas, Rupee, Account created successfully)">
+                  </a> <!-- openAccountTest(Guddu Biswas, Rupee, Account created successfully) -->
+                  <span class="method-name">openAccountTest</span>
+                  <span class="parameters">(Guddu Biswas, Rupee, Account created successfully)</span>
+                  <div class="stack-trace">org.testng.SkipException: SKIPPING the Test AS RUNMODE is NO
+	at com.org.testcases.OpenAccountTest.openAccountTest(OpenAccountTest.java:22)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Data_Driven_Approach-class-skipped -->
+          <div class="suite-Data_Driven_Approach-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.org.testcases.AddCustomerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addCustomerTest(Madhusmita, Halder, A425, Customer added successfully, Y)">
+                  </a> <!-- addCustomerTest(Madhusmita, Halder, A425, Customer added successfully, Y) -->
+                  <span class="method-name">addCustomerTest</span>
+                  <span class="parameters">(Madhusmita, Halder, A425, Customer added successfully, Y)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Data_Driven_Approach-class-passed -->
+          <div class="suite-Data_Driven_Approach-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.org.testcases.BankManagerLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankMngLogin">
+                  </a> <!-- bankMngLogin -->
+                  <span class="method-name">bankMngLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Data_Driven_Approach-class-passed -->
+        </div> <!-- panel Data_Driven_Approach -->
+        <div panel-name="test-xml-Data_Driven_Approach" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">F:\Selenium MyProjects\DataDrivenApproach\src\test\resources\runner\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Data Driven Approach&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
+    &lt;listener class-name=&quot;com.org.listeners.CustomListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Bank Manager Login Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.org.testcases.BankManagerLoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Bank Manager Login Test --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Add Customer Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.org.testcases.AddCustomerTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Add Customer Test --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Open Account Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.org.testcases.OpenAccountTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Open Account Test --&gt;
+&lt;/suite&gt; &lt;!-- Data Driven Approach --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Data_Driven_Approach" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Data Driven Approach</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Bank Manager Login Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Add Customer Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Open Account Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Data_Driven_Approach" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Data Driven Approach</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Data_Driven_Approach" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Data Driven Approach</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Data_Driven_Approach');
+function tableData_Data_Driven_Approach() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(6);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'bankMngLogin')
+data.setCell(0, 2, 'com.org.testcases.BankManagerLoginTest')
+data.setCell(0, 3, 18471);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'addCustomerTest')
+data.setCell(1, 2, 'com.org.testcases.AddCustomerTest')
+data.setCell(1, 3, 10588);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'addCustomerTest')
+data.setCell(2, 2, 'com.org.testcases.AddCustomerTest')
+data.setCell(2, 3, 10106);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'addCustomerTest')
+data.setCell(3, 2, 'com.org.testcases.AddCustomerTest')
+data.setCell(3, 3, 5365);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'openAccountTest')
+data.setCell(4, 2, 'com.org.testcases.OpenAccountTest')
+data.setCell(4, 3, 5);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'addCustomerTest')
+data.setCell(5, 2, 'com.org.testcases.AddCustomerTest')
+data.setCell(5, 3, 1);
+window.suiteTableData['Data_Driven_Approach']= { tableData: data, tableDiv: 'times-div-Data_Driven_Approach'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 44 seconds</span>
+              <div id="times-div-Data_Driven_Approach">
+              </div> <!-- times-div-Data_Driven_Approach -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Data_Driven_Approach" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Data Driven Approach</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">bankMngLogin</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Assertion Verify Error</span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output">expected [xyz] but found [abc]</span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output"><a href=error1.jpg target="_blank"><img src=error1.jpg height=200 width=200></img></a></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output">Bank Manager Logged in successfully :)</span>
+                <span class="reporter-method-output">BANKMNGLOGIN is Passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">addCustomerTest(Madhusmita, Halder, A425, Customer added successfully, Y)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Customer added successfully</span>
+                <span class="reporter-method-output">ADDCUSTOMERTEST is Passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">addCustomerTest(Guddu, Biswas, A234wd, Customer added successfully, Y)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">ADDCUSTOMERTEST is Failed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">addCustomerTest(Sudeep, Biswas, AFS42, Customer added successfully, Y)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">ADDCUSTOMERTEST is Failed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">addCustomerTest(Debasmita, Biswas, AFD76, Customer added successfully, N)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">ADDCUSTOMERTEST is Skipped</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">openAccountTest(Guddu Biswas, Rupee, Account created successfully)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">OPENACCOUNTTEST is Skipped</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Data_Driven_Approach" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Data_Driven_Approach" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.org.testcases.OpenAccountTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.org.testcases.BankManagerLoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">bankMngLogin</span>
+                <span class="method-start">102505 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.org.testcases.AddCustomerTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addCustomerTest(Guddu, Biswas, A234wd, Customer added successfully, Y)</span>
+                <span class="method-start">127868 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addCustomerTest(Debasmita, Biswas, AFD76, Customer added successfully, N)</span>
+                <span class="method-start">139094 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addCustomerTest(Sudeep, Biswas, AFS42, Customer added successfully, Y)</span>
+                <span class="method-start">139096 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addCustomerTest(Madhusmita, Halder, A425, Customer added successfully, Y)</span>
+                <span class="method-start">149542 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.org.testcases.OpenAccountTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">openAccountTest(Guddu Biswas, Rupee, Account created successfully)</span>
+                <span class="method-start">156245 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">156308 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
