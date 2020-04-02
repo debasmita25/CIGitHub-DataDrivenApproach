@@ -1,0 +1,280 @@
+15:44:48,828 DEBUG devpinoyLogger:53 - Logger Property file is configured
+15:44:48,837 DEBUG devpinoyLogger:68 - Object Repository - or file loaded successfully
+15:44:48,837 DEBUG devpinoyLogger:83 - config file is loaded successfully
+15:44:51,406 DEBUG RequestAddCookies:123 - CookieSpec selected: standard
+15:44:51,418 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+15:44:51,422 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {s}->https://raw.githubusercontent.com:443][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+15:44:51,450 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 0][route: {s}->https://raw.githubusercontent.com:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+15:44:51,454 DEBUG MainClientExec:235 - Opening connection {s}->https://raw.githubusercontent.com:443
+15:44:51,737 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to raw.githubusercontent.com/151.101.152.133:443
+15:44:51,737 DEBUG SSLConnectionSocketFactory:337 - Connecting socket to raw.githubusercontent.com/151.101.152.133:443 with timeout 0
+15:44:52,272 DEBUG SSLConnectionSocketFactory:390 - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+15:44:52,272 DEBUG SSLConnectionSocketFactory:391 - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+15:44:52,272 DEBUG SSLConnectionSocketFactory:395 - Starting handshake
+15:44:52,448 DEBUG SSLConnectionSocketFactory:425 - Secure session established
+15:44:52,448 DEBUG SSLConnectionSocketFactory:426 -  negotiated protocol: TLSv1.2
+15:44:52,448 DEBUG SSLConnectionSocketFactory:427 -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+15:44:52,452 DEBUG SSLConnectionSocketFactory:435 -  peer principal: CN=www.github.com, O="GitHub, Inc.", L=San Francisco, ST=California, C=US
+15:44:52,452 DEBUG SSLConnectionSocketFactory:444 -  peer alternative names: [www.github.com, *.github.com, github.com, *.github.io, github.io, *.githubusercontent.com, githubusercontent.com]
+15:44:52,452 DEBUG SSLConnectionSocketFactory:448 -  issuer principal: CN=DigiCert SHA2 High Assurance Server CA, OU=www.digicert.com, O=DigiCert Inc, C=US
+15:44:52,468 DEBUG DefaultHttpClientConnectionOperator:146 - Connection established 192.168.43.163:60117<->151.101.152.133:443
+15:44:52,468 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 30000
+15:44:52,468 DEBUG MainClientExec:256 - Executing request GET /bonigarcia/webdrivermanager/master/src/main/resources/versions.properties HTTP/1.1
+15:44:52,468 DEBUG MainClientExec:261 - Target auth state: UNCHALLENGED
+15:44:52,472 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+15:44:52,472 DEBUG headers:133 - http-outgoing-0 >> GET /bonigarcia/webdrivermanager/master/src/main/resources/versions.properties HTTP/1.1
+15:44:52,476 DEBUG headers:136 - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.6
+15:44:52,476 DEBUG headers:136 - http-outgoing-0 >> Connection: keep-alive
+15:44:52,476 DEBUG headers:136 - http-outgoing-0 >> Host: raw.githubusercontent.com
+15:44:52,476 DEBUG headers:136 - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+15:44:52,476 DEBUG wire:73 - http-outgoing-0 >> "GET /bonigarcia/webdrivermanager/master/src/main/resources/versions.properties HTTP/1.1[\r][\n]"
+15:44:52,476 DEBUG wire:73 - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.6[\r][\n]"
+15:44:52,476 DEBUG wire:73 - http-outgoing-0 >> "Connection: keep-alive[\r][\n]"
+15:44:52,481 DEBUG wire:73 - http-outgoing-0 >> "Host: raw.githubusercontent.com[\r][\n]"
+15:44:52,481 DEBUG wire:73 - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+15:44:52,481 DEBUG wire:73 - http-outgoing-0 >> "[\r][\n]"
+15:44:52,549 DEBUG wire:73 - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+15:44:52,553 DEBUG wire:73 - http-outgoing-0 << "Content-Type: text/plain; charset=utf-8[\r][\n]"
+15:44:52,553 DEBUG wire:73 - http-outgoing-0 << "Cache-Control: max-age=300[\r][\n]"
+15:44:52,553 DEBUG wire:73 - http-outgoing-0 << "Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox[\r][\n]"
+15:44:52,553 DEBUG wire:73 - http-outgoing-0 << "ETag: W/"57fbfb31ae08776db62e676dd65b33d9f6bff06ec25d8e87b53429030acd212f"[\r][\n]"
+15:44:52,557 DEBUG wire:73 - http-outgoing-0 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+15:44:52,557 DEBUG wire:73 - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+15:44:52,557 DEBUG wire:73 - http-outgoing-0 << "X-Frame-Options: deny[\r][\n]"
+15:44:52,557 DEBUG wire:73 - http-outgoing-0 << "X-XSS-Protection: 1; mode=block[\r][\n]"
+15:44:52,557 DEBUG wire:73 - http-outgoing-0 << "Via: 1.1 varnish (Varnish/6.0)[\r][\n]"
+15:44:52,561 DEBUG wire:73 - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+15:44:52,561 DEBUG wire:73 - http-outgoing-0 << "X-GitHub-Request-Id: 7D28:5455:95730:9DE7B:5E85B5FE[\r][\n]"
+15:44:52,561 DEBUG wire:73 - http-outgoing-0 << "Content-Length: 750[\r][\n]"
+15:44:52,561 DEBUG wire:73 - http-outgoing-0 << "Accept-Ranges: bytes[\r][\n]"
+15:44:52,561 DEBUG wire:73 - http-outgoing-0 << "Date: Thu, 02 Apr 2020 10:14:54 GMT[\r][\n]"
+15:44:52,561 DEBUG wire:73 - http-outgoing-0 << "Via: 1.1 varnish[\r][\n]"
+15:44:52,561 DEBUG wire:73 - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+15:44:52,565 DEBUG wire:73 - http-outgoing-0 << "X-Served-By: cache-bom18225-BOM[\r][\n]"
+15:44:52,565 DEBUG wire:73 - http-outgoing-0 << "X-Cache: HIT, HIT[\r][\n]"
+15:44:52,565 DEBUG wire:73 - http-outgoing-0 << "X-Cache-Hits: 8, 4[\r][\n]"
+15:44:52,565 DEBUG wire:73 - http-outgoing-0 << "X-Timer: S1585822495.651102,VS0,VE0[\r][\n]"
+15:44:52,565 DEBUG wire:73 - http-outgoing-0 << "Vary: Authorization,Accept-Encoding[\r][\n]"
+15:44:52,565 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+15:44:52,565 DEBUG wire:73 - http-outgoing-0 << "X-Fastly-Request-ID: 44b6c3e260c5abe806d7d7a0da68d72be8116e67[\r][\n]"
+15:44:52,565 DEBUG wire:73 - http-outgoing-0 << "Expires: Thu, 02 Apr 2020 10:19:54 GMT[\r][\n]"
+15:44:52,569 DEBUG wire:73 - http-outgoing-0 << "Source-Age: 227[\r][\n]"
+15:44:52,569 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+15:44:52,569 DEBUG wire:73 - http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x8d][0x95][0xcb]n[0xdb]0[0x10]E[0xf7][0xfe][\n]"
+15:44:52,569 DEBUG wire:73 - http-outgoing-0 << "[0x2][0xd9][0xb4][0x8b]P[0xe2]C[0xa4]d[0x80][0x9b]>WA[0x17][0xed][0xf][0xc8]6m[0xb][0x91]M[0x83][0x92][0xe3][0xb6]_[0xdf][0x19][0xbe][0xa2][0x18]-[0xd0][0xe5]=[0x1e][0xe]/8[0xba][0xe3][0x7][0xf2][0xe3]8Ld?[0x8c][0x96]l[0xdd]y[0xee][0x87][0xf3]D[0xe6][0xa3]%[0xcf]gw;[0x93][0x17][0xeb][0xa7][0xc1][0x1][0xda];Ov~@M[0xde]m[0x86]s[0xef][0xbd][0x87][0x3][0xa7]K?[0xf][0x1b]8{[0x1b][0xe6]c8[0xb7]u[0xde][0xdb][0xe9][0xe2][0xce][0xbb][0xe1]| [0x1b][0xef]n[0x93][0xf5][0xb9][0xcf]j[0xf5]@>D[0xb4]&_[0x9d];[0xc0][0xc9][0x8f]G[0xef]N[0x96]<[0x92]O[0xa1][0xfd][0x9a]l[0x3][0x88][0x97]A[0xfd]ww[0xf5][[0xbb]&[0xc7]y[0xbe][0xac][0xab]j[0xf9]+[\r]b[0xb8][0x9e][0xa8][0xf3][0x87]j[0x7][0x86]G[0xd7][0xef][0xa6]U[0xac]i[0x99]i[0x19][0xad][0xa9][0xac][0xa5][0xa4][0xaa][0xcb][0xb4]6m[\r]Tt[0xad][0xa6][0xac]V[0x9][0xeb][0xce][0xe8].`[0xd9]PQhkt[0x1b]h-[0xa1][0xb8][0xc9][0xc5][0xda]h[0x8d][0xb8]U[\r][0xb4][0xcf]T[0x19][0xad][0x2][0xad];[0xca]x[0xe9][0xd1][0x18][0xdd] [0xd6][0xba][0xa6][0xec][0xb5]Z[0x1a]-[0x3][0xe6][0x1d]-[0xb5][0xc2]h[0x81]P[0xb5][0x82][0xaa]67[0xe6][0x86]SYj[0xd8][0x1b]U[0xa3][0xca][0xc6]T[0x87]J[0xa6]s[0xaa]E[0xc5][0xb3][0xd2][0xa8]XV[\n]"
+15:44:52,569 DEBUG wire:73 - http-outgoing-0 << "U[0xb6][0xae][0x1a]P"[0xdf][0xa7]$*[0x9d]+[0x5][0xaa]|[0xbb]B/[0xa2][0xdc][0x87]^D[0xb9][0xf][0xbd][0x8][0xf1]f[0xc8]O[0xee][0xf7]0[0x8e]=[0xf9]2x[0xbb]w?[0x17]c>[0xd8][0xed][0xb3][0xfb][0xeb][0x94]'[0x18][0xf3][0x1][0xbe][0xa7][0xeb][0x86][0xc2][0x17]V[0x9d]b[0x8b]jq[0xa0][0xf2]v[0xb4][0xfd]d[0xa7][0xd5]>[0xf6][0xd5][0xc2][0xd4][0x94][0xc3][0xeb][0x17][0xc0][0xef][0x1][0xbb][0x7][0xf5][0x1d][0x80][0xc7]{[0xdb][0x3][0xde][0xf][0x0][0xcc].7U[0x1a][0x1]L[0xad][0x0]u[0xf][0x9a]{ [0x11][0xc0]L[0xcb][0x91][0xe0]t[0x9][0x82]S[0xbe][0xa8][0x8]N[0xe1][0xcb]-G[0x82][0xd3][0x5]h[0x82][0xd3]%[0x8]N[0x97] 8][0x82][0xe0][0x14]>[0xfc][0xdc][0xb4][0x9]N[0x11],3[0xf9][0xed]b}[0xbf][0x18][0x92]C[0xfd]?C[\n]"
+15:44:52,569 DEBUG wire:73 - http-outgoing-0 << "[0x85][0x93][0xdb][0xcf][0xb7][0xde][0xdb]*[0xa8][0x1c][0xce]x[0xfc]ud[0xe1]Gx[0xca]e[0xc][0xeb]U[0xa4][0x10][0xa1][0x92]B[0xdd]%[0x8][0x1]*!lu[0x82][0x10][0x9f][0x12]A[0xc6][0xf3]y[0xc8][0xcf]k[0x4][0x5]O[0xb5]|[0x99][0xc0]:[0xd7][0xa6][0xe4][0x84][0x8b][0xe1]EC[0x8c][0xa2]H[0xb9][0x89]"[0xc5]&[0x8a][0x94][0x9a](Rh[0xa2]H[0x99][0x89]"E&[0x8a][0x94][0x98](B`D[0xba]'[0xe5]%[0xfc]"[0xd1]Av,[0xd1][0x81]HF%:[0xe0][0xe9]1$:[0x0][0xb1][0x1c][0xda][0xd3][0xb0][0xf5][0xe][0xdf][0x9e]|[0xde][0x1d][0x96][0x9b][0xf4]4Y[0x0][0xff][0x1c][0xdf][0xce][0xbe][0xd8][0x11]/[0xa7][0xa7][0xdc]![0x4][0xce][0x9e][0x1f][0xaf]SU[0xd8]#6[0xa9]f[0xe7][0xc6][0xa9][0xba][0xd9]M[0x1a][0xe7][\n]"
+15:44:52,573 DEBUG wire:87 - http-outgoing-0 << "iY[0xb1]L[0xe1][0x1a][0x8]([0xef]W[0xc5]p[0xe9]"*[0xbb][0x95][0xe1]g[0x1f]H[0xda][0xab][0x1c]g[0x18]IZ[0xa9]\[0x14][0x92][0xd6])[0x83]U[0x98]j[0xd2]&e[0xa2][0x83]/7[0x1c][0x93][0xd2]\[0xbc]}[0x84]?[0xad][0xb9][0x1f]G[0xbb][0x8b][0x90][0x1b]E[0x99]f[0xc9][0x91]d[0xa6][0xa1]L[0xf1].[0xba][0x91][0xb5][0x81]][0xde][0xd4]J[0x84]b[0xd1][0x1a][0x1]kYtQr[0x1c]*l[0xfa]V[0x85]_ym[0x18]H[0xe][0x9b][0xf2][0xf][0xca][0xd4][0x8f][0x1e]*[0x7][0x0][0x0]"
+15:44:52,577 DEBUG headers:122 - http-outgoing-0 << HTTP/1.1 200 OK
+15:44:52,577 DEBUG headers:125 - http-outgoing-0 << Content-Type: text/plain; charset=utf-8
+15:44:52,581 DEBUG headers:125 - http-outgoing-0 << Cache-Control: max-age=300
+15:44:52,581 DEBUG headers:125 - http-outgoing-0 << Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+15:44:52,581 DEBUG headers:125 - http-outgoing-0 << ETag: W/"57fbfb31ae08776db62e676dd65b33d9f6bff06ec25d8e87b53429030acd212f"
+15:44:52,581 DEBUG headers:125 - http-outgoing-0 << Strict-Transport-Security: max-age=31536000
+15:44:52,581 DEBUG headers:125 - http-outgoing-0 << X-Content-Type-Options: nosniff
+15:44:52,581 DEBUG headers:125 - http-outgoing-0 << X-Frame-Options: deny
+15:44:52,581 DEBUG headers:125 - http-outgoing-0 << X-XSS-Protection: 1; mode=block
+15:44:52,581 DEBUG headers:125 - http-outgoing-0 << Via: 1.1 varnish (Varnish/6.0)
+15:44:52,585 DEBUG headers:125 - http-outgoing-0 << Content-Encoding: gzip
+15:44:52,585 DEBUG headers:125 - http-outgoing-0 << X-GitHub-Request-Id: 7D28:5455:95730:9DE7B:5E85B5FE
+15:44:52,585 DEBUG headers:125 - http-outgoing-0 << Content-Length: 750
+15:44:52,585 DEBUG headers:125 - http-outgoing-0 << Accept-Ranges: bytes
+15:44:52,585 DEBUG headers:125 - http-outgoing-0 << Date: Thu, 02 Apr 2020 10:14:54 GMT
+15:44:52,585 DEBUG headers:125 - http-outgoing-0 << Via: 1.1 varnish
+15:44:52,585 DEBUG headers:125 - http-outgoing-0 << Connection: keep-alive
+15:44:52,585 DEBUG headers:125 - http-outgoing-0 << X-Served-By: cache-bom18225-BOM
+15:44:52,585 DEBUG headers:125 - http-outgoing-0 << X-Cache: HIT, HIT
+15:44:52,589 DEBUG headers:125 - http-outgoing-0 << X-Cache-Hits: 8, 4
+15:44:52,589 DEBUG headers:125 - http-outgoing-0 << X-Timer: S1585822495.651102,VS0,VE0
+15:44:52,589 DEBUG headers:125 - http-outgoing-0 << Vary: Authorization,Accept-Encoding
+15:44:52,589 DEBUG headers:125 - http-outgoing-0 << Access-Control-Allow-Origin: *
+15:44:52,589 DEBUG headers:125 - http-outgoing-0 << X-Fastly-Request-ID: 44b6c3e260c5abe806d7d7a0da68d72be8116e67
+15:44:52,589 DEBUG headers:125 - http-outgoing-0 << Expires: Thu, 02 Apr 2020 10:19:54 GMT
+15:44:52,589 DEBUG headers:125 - http-outgoing-0 << Source-Age: 227
+15:44:52,597 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+15:44:52,690 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 0][route: {s}->https://raw.githubusercontent.com:443] can be kept alive indefinitely
+15:44:52,690 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 0
+15:44:52,694 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 0][route: {s}->https://raw.githubusercontent.com:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+15:45:23,512 DEBUG devpinoyLogger:91 - ChromeDriver is launched successfully
+15:45:32,981 DEBUG devpinoyLogger:102 - Navigate To : http://www.way2automation.com/angularjs-protractor/banking/#/login
+15:45:50,784 DEBUG devpinoyLogger:131 - Assertion Verify Error
+15:45:52,226 DEBUG devpinoyLogger:20 - Inside Bank manager Login Test
+15:45:52,809 DEBUG devpinoyLogger:205 - Required Element is Clicked
+15:45:53,147 DEBUG devpinoyLogger:24 - Bank Manager successfully logged in 
+15:45:55,148 DEBUG cache:44 - Couldn't find template in cache for "spark/spark.spa.ftl"("en_IN", UTF-8, parsed); will try to load it.
+15:45:55,152 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/spark.spa_en_IN.ftl"): Not found
+15:45:55,192 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/spark.spa_en.ftl"): Not found
+15:45:55,196 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/spark.spa.ftl"): Found
+15:45:55,196 DEBUG cache:44 - Loading template for "spark/spark.spa.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Windows/system32/config/systemprofile/.m2/repository/com/aventstack/extentreports/4.1.3/extentreports-4.1.3.jar!/com/aventstack/extentreports/view/spark/spark.spa.ftl"
+15:45:57,285 DEBUG cache:44 - Couldn't find template in cache for "commons/commons-variables.ftl"("en_IN", UTF-8, parsed); will try to load it.
+15:45:57,285 DEBUG cache:44 - TemplateLoader.findTemplateSource("commons/commons-variables_en_IN.ftl"): Not found
+15:45:57,285 DEBUG cache:44 - TemplateLoader.findTemplateSource("commons/commons-variables_en.ftl"): Not found
+15:45:57,285 DEBUG cache:44 - TemplateLoader.findTemplateSource("commons/commons-variables.ftl"): Found
+15:45:57,285 DEBUG cache:44 - Loading template for "commons/commons-variables.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Windows/system32/config/systemprofile/.m2/repository/com/aventstack/extentreports/4.1.3/extentreports-4.1.3.jar!/com/aventstack/extentreports/view/commons/commons-variables.ftl"
+15:45:58,807 DEBUG cache:44 - Couldn't find template in cache for "commons/commons-macros.ftl"("en_IN", UTF-8, parsed); will try to load it.
+15:45:58,807 DEBUG cache:44 - TemplateLoader.findTemplateSource("commons/commons-macros_en_IN.ftl"): Not found
+15:45:58,807 DEBUG cache:44 - TemplateLoader.findTemplateSource("commons/commons-macros_en.ftl"): Not found
+15:45:58,807 DEBUG cache:44 - TemplateLoader.findTemplateSource("commons/commons-macros.ftl"): Found
+15:45:58,811 DEBUG cache:44 - Loading template for "commons/commons-macros.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Windows/system32/config/systemprofile/.m2/repository/com/aventstack/extentreports/4.1.3/extentreports-4.1.3.jar!/com/aventstack/extentreports/view/commons/commons-macros.ftl"
+15:45:58,851 DEBUG cache:44 - Couldn't find template in cache for "spark/macros/attributes.ftl"("en_IN", UTF-8, parsed); will try to load it.
+15:45:58,855 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/macros/attributes_en_IN.ftl"): Not found
+15:45:58,859 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/macros/attributes_en.ftl"): Not found
+15:45:58,859 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/macros/attributes.ftl"): Found
+15:45:58,859 DEBUG cache:44 - Loading template for "spark/macros/attributes.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Windows/system32/config/systemprofile/.m2/repository/com/aventstack/extentreports/4.1.3/extentreports-4.1.3.jar!/com/aventstack/extentreports/view/spark/macros/attributes.ftl"
+15:45:58,863 DEBUG cache:44 - Couldn't find template in cache for "spark/macros/log.ftl"("en_IN", UTF-8, parsed); will try to load it.
+15:45:58,867 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/macros/log_en_IN.ftl"): Not found
+15:45:58,871 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/macros/log_en.ftl"): Not found
+15:45:58,871 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/macros/log.ftl"): Found
+15:45:58,871 DEBUG cache:44 - Loading template for "spark/macros/log.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Windows/system32/config/systemprofile/.m2/repository/com/aventstack/extentreports/4.1.3/extentreports-4.1.3.jar!/com/aventstack/extentreports/view/spark/macros/log.ftl"
+15:45:58,883 DEBUG cache:44 - Couldn't find template in cache for "spark/macros/recurse_nodes.ftl"("en_IN", UTF-8, parsed); will try to load it.
+15:45:58,883 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes_en_IN.ftl"): Not found
+15:45:58,883 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes_en.ftl"): Not found
+15:45:58,883 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes.ftl"): Found
+15:45:58,883 DEBUG cache:44 - Loading template for "spark/macros/recurse_nodes.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Windows/system32/config/systemprofile/.m2/repository/com/aventstack/extentreports/4.1.3/extentreports-4.1.3.jar!/com/aventstack/extentreports/view/spark/macros/recurse_nodes.ftl"
+15:45:58,903 DEBUG cache:44 - "spark/macros/log.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+15:45:58,919 DEBUG cache:44 - Couldn't find template in cache for "spark/partials/head.ftl"("en_IN", UTF-8, parsed); will try to load it.
+15:45:58,923 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/head_en_IN.ftl"): Not found
+15:45:58,923 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/head_en.ftl"): Not found
+15:45:58,923 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/head.ftl"): Found
+15:45:58,923 DEBUG cache:44 - Loading template for "spark/partials/head.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Windows/system32/config/systemprofile/.m2/repository/com/aventstack/extentreports/4.1.3/extentreports-4.1.3.jar!/com/aventstack/extentreports/view/spark/partials/head.ftl"
+15:45:58,931 DEBUG cache:44 - Couldn't find template in cache for "commons/commons-inject-css.ftl"("en_IN", UTF-8, parsed); will try to load it.
+15:45:58,931 DEBUG cache:44 - TemplateLoader.findTemplateSource("commons/commons-inject-css_en_IN.ftl"): Not found
+15:45:58,931 DEBUG cache:44 - TemplateLoader.findTemplateSource("commons/commons-inject-css_en.ftl"): Not found
+15:45:58,935 DEBUG cache:44 - TemplateLoader.findTemplateSource("commons/commons-inject-css.ftl"): Found
+15:45:58,935 DEBUG cache:44 - Loading template for "commons/commons-inject-css.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Windows/system32/config/systemprofile/.m2/repository/com/aventstack/extentreports/4.1.3/extentreports-4.1.3.jar!/com/aventstack/extentreports/view/commons/commons-inject-css.ftl"
+15:45:58,939 DEBUG cache:44 - Couldn't find template in cache for "spark/partials/navbar.ftl"("en_IN", UTF-8, parsed); will try to load it.
+15:45:58,939 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/navbar_en_IN.ftl"): Not found
+15:45:58,939 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/navbar_en.ftl"): Not found
+15:45:58,939 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/navbar.ftl"): Found
+15:45:58,939 DEBUG cache:44 - Loading template for "spark/partials/navbar.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Windows/system32/config/systemprofile/.m2/repository/com/aventstack/extentreports/4.1.3/extentreports-4.1.3.jar!/com/aventstack/extentreports/view/spark/partials/navbar.ftl"
+15:45:59,081 DEBUG cache:44 - Couldn't find template in cache for "spark/partials/sidenav.ftl"("en_IN", UTF-8, parsed); will try to load it.
+15:45:59,085 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/sidenav_en_IN.ftl"): Not found
+15:45:59,085 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/sidenav_en.ftl"): Not found
+15:45:59,085 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/sidenav.ftl"): Found
+15:45:59,085 DEBUG cache:44 - Loading template for "spark/partials/sidenav.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Windows/system32/config/systemprofile/.m2/repository/com/aventstack/extentreports/4.1.3/extentreports-4.1.3.jar!/com/aventstack/extentreports/view/spark/partials/sidenav.ftl"
+15:45:59,093 DEBUG cache:44 - Couldn't find template in cache for "spark/partials/test.ftl"("en_IN", UTF-8, parsed); will try to load it.
+15:45:59,093 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/test_en_IN.ftl"): Not found
+15:45:59,093 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/test_en.ftl"): Not found
+15:45:59,093 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/test.ftl"): Found
+15:45:59,093 DEBUG cache:44 - Loading template for "spark/partials/test.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Windows/system32/config/systemprofile/.m2/repository/com/aventstack/extentreports/4.1.3/extentreports-4.1.3.jar!/com/aventstack/extentreports/view/spark/partials/test.ftl"
+15:45:59,375 DEBUG cache:44 - Couldn't find template in cache for "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed); will try to load it.
+15:45:59,375 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/standard-content_en_IN.ftl"): Not found
+15:45:59,375 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/standard-content_en.ftl"): Not found
+15:45:59,379 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/standard-content.ftl"): Found
+15:45:59,379 DEBUG cache:44 - Loading template for "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Windows/system32/config/systemprofile/.m2/repository/com/aventstack/extentreports/4.1.3/extentreports-4.1.3.jar!/com/aventstack/extentreports/view/spark/partials/standard-content.ftl"
+15:45:59,403 DEBUG cache:44 - Couldn't find template in cache for "spark/partials/dashboard.ftl"("en_IN", UTF-8, parsed); will try to load it.
+15:45:59,407 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/dashboard_en_IN.ftl"): Not found
+15:45:59,407 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/dashboard_en.ftl"): Not found
+15:45:59,407 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/dashboard.ftl"): Found
+15:45:59,407 DEBUG cache:44 - Loading template for "spark/partials/dashboard.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Windows/system32/config/systemprofile/.m2/repository/com/aventstack/extentreports/4.1.3/extentreports-4.1.3.jar!/com/aventstack/extentreports/view/spark/partials/dashboard.ftl"
+15:45:59,728 DEBUG cache:44 - Couldn't find template in cache for "spark/partials/scripts.ftl"("en_IN", UTF-8, parsed); will try to load it.
+15:45:59,728 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/scripts_en_IN.ftl"): Not found
+15:45:59,728 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/scripts_en.ftl"): Not found
+15:45:59,728 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/scripts.ftl"): Found
+15:45:59,728 DEBUG cache:44 - Loading template for "spark/partials/scripts.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Windows/system32/config/systemprofile/.m2/repository/com/aventstack/extentreports/4.1.3/extentreports-4.1.3.jar!/com/aventstack/extentreports/view/spark/partials/scripts.ftl"
+15:46:00,593 DEBUG devpinoyLogger:63 - Data provided successfully
+15:46:00,682 DEBUG devpinoyLogger:19 - Inside Customer added test
+15:46:00,809 DEBUG devpinoyLogger:205 - Required Element is Clicked
+15:46:02,474 DEBUG devpinoyLogger:249 - Required Element is Typed
+15:46:02,662 DEBUG devpinoyLogger:249 - Required Element is Typed
+15:46:02,850 DEBUG devpinoyLogger:249 - Required Element is Typed
+15:46:04,029 DEBUG devpinoyLogger:205 - Required Element is Clicked
+15:46:04,061 DEBUG devpinoyLogger:39 - Customer added successfully
+15:46:04,149 DEBUG devpinoyLogger:19 - Inside Customer added test
+15:46:04,153 DEBUG devpinoyLogger:19 - Inside Customer added test
+15:46:04,221 DEBUG devpinoyLogger:205 - Required Element is Clicked
+15:46:04,417 DEBUG devpinoyLogger:249 - Required Element is Typed
+15:46:04,545 DEBUG devpinoyLogger:249 - Required Element is Typed
+15:46:04,645 DEBUG devpinoyLogger:249 - Required Element is Typed
+15:46:04,705 DEBUG devpinoyLogger:205 - Required Element is Clicked
+15:46:04,717 DEBUG devpinoyLogger:39 - Customer added successfully
+15:46:04,729 DEBUG devpinoyLogger:19 - Inside Customer added test
+15:46:04,841 DEBUG devpinoyLogger:205 - Required Element is Clicked
+15:46:04,969 DEBUG devpinoyLogger:249 - Required Element is Typed
+15:46:05,069 DEBUG devpinoyLogger:249 - Required Element is Typed
+15:46:05,169 DEBUG devpinoyLogger:249 - Required Element is Typed
+15:46:05,261 DEBUG devpinoyLogger:205 - Required Element is Clicked
+15:46:05,269 DEBUG devpinoyLogger:39 - Customer added successfully
+15:46:05,432 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/spark.spa_en_IN.ftl"): Not found
+15:46:05,432 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/spark.spa_en.ftl"): Not found
+15:46:05,436 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/spark.spa.ftl"): Found
+15:46:05,436 DEBUG cache:44 - "spark/spark.spa.ftl"("en_IN", UTF-8, parsed): using cached since jar:file:/C:/Windows/system32/config/systemprofile/.m2/repository/com/aventstack/extentreports/4.1.3/extentreports-4.1.3.jar!/com/aventstack/extentreports/view/spark/spark.spa.ftl hasn't changed.
+15:46:05,440 DEBUG cache:44 - TemplateLoader.findTemplateSource("commons/commons-variables_en_IN.ftl"): Not found
+15:46:05,440 DEBUG cache:44 - TemplateLoader.findTemplateSource("commons/commons-variables_en.ftl"): Not found
+15:46:05,440 DEBUG cache:44 - TemplateLoader.findTemplateSource("commons/commons-variables.ftl"): Found
+15:46:05,444 DEBUG cache:44 - "commons/commons-variables.ftl"("en_IN", UTF-8, parsed): using cached since jar:file:/C:/Windows/system32/config/systemprofile/.m2/repository/com/aventstack/extentreports/4.1.3/extentreports-4.1.3.jar!/com/aventstack/extentreports/view/commons/commons-variables.ftl hasn't changed.
+15:46:05,452 DEBUG cache:44 - TemplateLoader.findTemplateSource("commons/commons-macros_en_IN.ftl"): Not found
+15:46:05,452 DEBUG cache:44 - TemplateLoader.findTemplateSource("commons/commons-macros_en.ftl"): Not found
+15:46:05,452 DEBUG cache:44 - TemplateLoader.findTemplateSource("commons/commons-macros.ftl"): Found
+15:46:05,452 DEBUG cache:44 - "commons/commons-macros.ftl"("en_IN", UTF-8, parsed): using cached since jar:file:/C:/Windows/system32/config/systemprofile/.m2/repository/com/aventstack/extentreports/4.1.3/extentreports-4.1.3.jar!/com/aventstack/extentreports/view/commons/commons-macros.ftl hasn't changed.
+15:46:05,456 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/macros/attributes_en_IN.ftl"): Not found
+15:46:05,456 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/macros/attributes_en.ftl"): Not found
+15:46:05,456 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/macros/attributes.ftl"): Found
+15:46:05,456 DEBUG cache:44 - "spark/macros/attributes.ftl"("en_IN", UTF-8, parsed): using cached since jar:file:/C:/Windows/system32/config/systemprofile/.m2/repository/com/aventstack/extentreports/4.1.3/extentreports-4.1.3.jar!/com/aventstack/extentreports/view/spark/macros/attributes.ftl hasn't changed.
+15:46:05,460 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/macros/log_en_IN.ftl"): Not found
+15:46:05,460 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/macros/log_en.ftl"): Not found
+15:46:05,460 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/macros/log.ftl"): Found
+15:46:05,460 DEBUG cache:44 - "spark/macros/log.ftl"("en_IN", UTF-8, parsed): using cached since jar:file:/C:/Windows/system32/config/systemprofile/.m2/repository/com/aventstack/extentreports/4.1.3/extentreports-4.1.3.jar!/com/aventstack/extentreports/view/spark/macros/log.ftl hasn't changed.
+15:46:05,464 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes_en_IN.ftl"): Not found
+15:46:05,464 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes_en.ftl"): Not found
+15:46:05,464 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes.ftl"): Found
+15:46:05,464 DEBUG cache:44 - "spark/macros/recurse_nodes.ftl"("en_IN", UTF-8, parsed): using cached since jar:file:/C:/Windows/system32/config/systemprofile/.m2/repository/com/aventstack/extentreports/4.1.3/extentreports-4.1.3.jar!/com/aventstack/extentreports/view/spark/macros/recurse_nodes.ftl hasn't changed.
+15:46:05,468 DEBUG cache:44 - "spark/macros/log.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+15:46:05,468 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/head_en_IN.ftl"): Not found
+15:46:05,468 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/head_en.ftl"): Not found
+15:46:05,468 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/head.ftl"): Found
+15:46:05,468 DEBUG cache:44 - "spark/partials/head.ftl"("en_IN", UTF-8, parsed): using cached since jar:file:/C:/Windows/system32/config/systemprofile/.m2/repository/com/aventstack/extentreports/4.1.3/extentreports-4.1.3.jar!/com/aventstack/extentreports/view/spark/partials/head.ftl hasn't changed.
+15:46:05,472 DEBUG cache:44 - TemplateLoader.findTemplateSource("commons/commons-inject-css_en_IN.ftl"): Not found
+15:46:05,472 DEBUG cache:44 - TemplateLoader.findTemplateSource("commons/commons-inject-css_en.ftl"): Not found
+15:46:05,472 DEBUG cache:44 - TemplateLoader.findTemplateSource("commons/commons-inject-css.ftl"): Found
+15:46:05,472 DEBUG cache:44 - "commons/commons-inject-css.ftl"("en_IN", UTF-8, parsed): using cached since jar:file:/C:/Windows/system32/config/systemprofile/.m2/repository/com/aventstack/extentreports/4.1.3/extentreports-4.1.3.jar!/com/aventstack/extentreports/view/commons/commons-inject-css.ftl hasn't changed.
+15:46:05,472 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/navbar_en_IN.ftl"): Not found
+15:46:05,472 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/navbar_en.ftl"): Not found
+15:46:05,476 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/navbar.ftl"): Found
+15:46:05,476 DEBUG cache:44 - "spark/partials/navbar.ftl"("en_IN", UTF-8, parsed): using cached since jar:file:/C:/Windows/system32/config/systemprofile/.m2/repository/com/aventstack/extentreports/4.1.3/extentreports-4.1.3.jar!/com/aventstack/extentreports/view/spark/partials/navbar.ftl hasn't changed.
+15:46:05,476 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/sidenav_en_IN.ftl"): Not found
+15:46:05,480 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/sidenav_en.ftl"): Not found
+15:46:05,480 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/sidenav.ftl"): Found
+15:46:05,480 DEBUG cache:44 - "spark/partials/sidenav.ftl"("en_IN", UTF-8, parsed): using cached since jar:file:/C:/Windows/system32/config/systemprofile/.m2/repository/com/aventstack/extentreports/4.1.3/extentreports-4.1.3.jar!/com/aventstack/extentreports/view/spark/partials/sidenav.ftl hasn't changed.
+15:46:05,484 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/test_en_IN.ftl"): Not found
+15:46:05,484 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/test_en.ftl"): Not found
+15:46:05,484 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/test.ftl"): Found
+15:46:05,484 DEBUG cache:44 - "spark/partials/test.ftl"("en_IN", UTF-8, parsed): using cached since jar:file:/C:/Windows/system32/config/systemprofile/.m2/repository/com/aventstack/extentreports/4.1.3/extentreports-4.1.3.jar!/com/aventstack/extentreports/view/spark/partials/test.ftl hasn't changed.
+15:46:05,488 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/standard-content_en_IN.ftl"): Not found
+15:46:05,488 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/standard-content_en.ftl"): Not found
+15:46:05,488 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/standard-content.ftl"): Found
+15:46:05,488 DEBUG cache:44 - "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed): using cached since jar:file:/C:/Windows/system32/config/systemprofile/.m2/repository/com/aventstack/extentreports/4.1.3/extentreports-4.1.3.jar!/com/aventstack/extentreports/view/spark/partials/standard-content.ftl hasn't changed.
+15:46:05,496 DEBUG cache:44 - "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+15:46:05,496 DEBUG cache:44 - "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+15:46:05,500 DEBUG cache:44 - "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+15:46:05,500 DEBUG cache:44 - "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+15:46:05,504 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/dashboard_en_IN.ftl"): Not found
+15:46:05,504 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/dashboard_en.ftl"): Not found
+15:46:05,504 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/dashboard.ftl"): Found
+15:46:05,504 DEBUG cache:44 - "spark/partials/dashboard.ftl"("en_IN", UTF-8, parsed): using cached since jar:file:/C:/Windows/system32/config/systemprofile/.m2/repository/com/aventstack/extentreports/4.1.3/extentreports-4.1.3.jar!/com/aventstack/extentreports/view/spark/partials/dashboard.ftl hasn't changed.
+15:46:05,512 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/scripts_en_IN.ftl"): Not found
+15:46:05,512 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/scripts_en.ftl"): Not found
+15:46:05,512 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/scripts.ftl"): Found
+15:46:05,512 DEBUG cache:44 - "spark/partials/scripts.ftl"("en_IN", UTF-8, parsed): using cached since jar:file:/C:/Windows/system32/config/systemprofile/.m2/repository/com/aventstack/extentreports/4.1.3/extentreports-4.1.3.jar!/com/aventstack/extentreports/view/spark/partials/scripts.ftl hasn't changed.
+15:46:05,524 DEBUG devpinoyLogger:63 - Data provided successfully
+15:46:05,544 DEBUG cache:44 - "spark/spark.spa.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+15:46:05,544 DEBUG cache:44 - "commons/commons-variables.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+15:46:05,548 DEBUG cache:44 - "commons/commons-macros.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+15:46:05,548 DEBUG cache:44 - "spark/macros/attributes.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+15:46:05,548 DEBUG cache:44 - "spark/macros/log.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+15:46:05,548 DEBUG cache:44 - "spark/macros/recurse_nodes.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+15:46:05,548 DEBUG cache:44 - "spark/macros/log.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+15:46:05,548 DEBUG cache:44 - "spark/partials/head.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+15:46:05,548 DEBUG cache:44 - "commons/commons-inject-css.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+15:46:05,548 DEBUG cache:44 - "spark/partials/navbar.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+15:46:05,548 DEBUG cache:44 - "spark/partials/sidenav.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+15:46:05,548 DEBUG cache:44 - "spark/partials/test.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+15:46:05,552 DEBUG cache:44 - "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+15:46:05,556 DEBUG cache:44 - "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+15:46:05,556 DEBUG cache:44 - "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+15:46:05,556 DEBUG cache:44 - "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+15:46:05,556 DEBUG cache:44 - "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+15:46:05,556 DEBUG cache:44 - "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+15:46:05,556 DEBUG cache:44 - "spark/partials/dashboard.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+15:46:05,560 DEBUG cache:44 - "spark/partials/scripts.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+15:46:08,869 DEBUG devpinoyLogger:158 - Test Execution completed
